@@ -1,6 +1,6 @@
 (() => {
   const root = document.documentElement;
-  const buttons = document.querySelectorAll("[data-language]");
+  const buttons = document.querySelectorAll("button[data-language]");
   const preferred = localStorage.getItem("tianqi-language");
   const initial = preferred || (navigator.language.toLowerCase().startsWith("zh") ? "zh-CN" : "en");
 
